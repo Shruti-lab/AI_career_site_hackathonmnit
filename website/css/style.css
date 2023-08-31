@@ -9,29 +9,131 @@
     align-items: center
 }
 .logo img{
-    width:33%;
-    border: #1DCD89;
+    width: 33%;
+    border: 3px #1DCD89;
+    border-radius: 50px;
 }
 .navbar{
    display: flex;
-   
+   align-items: center;
+   justify-content: center;
+   position:sticky;
+   top:0;
+   /*background-color: black;*/
+   cursor:pointer;
+
 }
 .nav-list{
     width: 50%;
-    background-color: #1DCD8D;
+    /*background-color: #1DCD8D;*/
+    display: flex;
+    align-items: center;
 
 }
 
 .nav-list li{
-
+    list-style: none;
+    padding: 26px 30px;
 }
 
 .nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(195, 195, 195);
 
 }
 
 .rightNav{
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     width:50%;
     text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+   background: rgba(0, 0, 0, 0.7)  url("../Img/home2.png");
+   background-size: cover;
+   /*background-blend-mode:darken;*/
+}
+
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    max-width: 80%;
+    height: 80%;
+}
+.firstHalf{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    padding-top:100px;
+    padding: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.secondHalf{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+
+}
+.text-big{
+    font-size: 70px;
+}
+.text-small{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    font-size: 20px;
+}
+
+.btn{
+    padding: 9px 20px;  /*height length*/
+    margin: 7px 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 70px;
+    background-color: black;
+    color: rgb(213, 255, 115);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 3px 10px;  /*height length*/
+    vertical-align: middle;
+}
+
+.secRight{
+    height:500px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin:auto;
+}
+
+.thumbnail{
+    height:20px;
+    weight: 2px;
 }
