@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,21 +15,23 @@
 }
 .logo img{
     width: 33%;
-    border: 3px #1DCD89;
+    height: 33%;
+    border:3px #ffffff;
     border-radius: 50px;
 }
 .navbar{
    display: flex;
+   height: 70px;
    align-items: center;
    justify-content: center;
    position:sticky;
    top:0;
-   /*background-color: black;*/
+   background-blend-mode: darken;
    cursor:pointer;
 
 }
 .nav-list{
-    width: 50%;
+    width: 70%;
     /*background-color: #1DCD8D;*/
     display: flex;
     align-items: center;
@@ -63,13 +70,15 @@
 }
 
 .background{
-   background: rgba(0, 0, 0, 0.7)  url("../Img/home2.png");
+   background: #1A2529;
    background-size: cover;
    /*background-blend-mode:darken;*/
 }
 
 .firstSection{
-    height: 100vh;
+    background: url("../Img/home2.png");
+    background-size: cover;
+    height: 110vh;
 }
 .box-main{
     display: flex;
@@ -78,7 +87,7 @@
     align-items: center;
     color: rgb(255, 255, 255);
     font-style: italic;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'League Spartan', sans-serif;
     margin: auto;
     max-width: 80%;
     height: 80%;
@@ -101,6 +110,10 @@
 }
 .text-big{
     font-size: 70px;
+}
+
+.text-medium{
+    font-size: 40px;
 }
 .text-small{
     padding-top: 20px;
@@ -127,13 +140,112 @@
 .secRight{
     height:500px;
     display : flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content: space-evenly;
     max-width: 90%;
     margin:auto;
 }
+.thumbnail img{
+    height:300px;
+    width: 330px;
+    border:2px solid black;
+    border-radius: 25px;
+    margin-top: 19px;
+}
 
-.thumbnail{
-    height:20px;
-    weight: 2px;
+.left{
+
+}
+
+.paras{
+    padding:0 50px;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-mid{
+    height:570px;
+    padding-top:80px;
+    /*display: flex*/
+}
+
+.service_block{
+    max-width: 90%;
+    justify-content: space-evenly;
+    align-items:center;
+    margin:auto;
+    font-size:20px;
+    font-weight:500;
+    color: azure;
+    line-height:27px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.services_title{
+    color:#1DCD8D;
+    padding-bottom: 25px;
+}
+
+.parent {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+max-width: 90%;
+   /* border: 1rem solid green;
+    margin: 1rem;
+    padding: 1rem 1rem;*/
+    justify-content:space-evenly;
+    text-align: center;
+    padding-top: 25px;
+    margin: auto;
+ }
+ .division {
+    display: inline-block;
+    /*border: 5px solid aquamarine;*/
+    background-color: #263237;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+    margin:30px;
+    color: aliceblue;
+    text-align: left;
+ }
+
+ .divtitle{
+    font-size:25px;
+    text-align: left;
+    color:#1DCD8D;
+    padding-bottom: 10px;
+ }
+
+ .divimg img{
+    width: 50px;
+    height: 50px;
+    border:1.5px solid #a8ffdf;
+    border-radius: 5px;
+ }
+
+.contact{
+    display: flex;
+    height: 570px;
+    padding: 80px;
+    justify-content: space-evenly;
+    /*flex-direction: row-reverse;*/
+}
+
+.contacttxt{
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 30px;
+    color: antiquewhite;
+}
+
+.socials{
+    padding-top: 10px;
+    max-width: 100%;
+    align-content: start;
+    
 }
