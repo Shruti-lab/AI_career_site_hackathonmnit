@@ -148,7 +148,29 @@
     max-width: 80%;
     margin: auto;
 }
+.quiz2 {
+    max-width: 80%;
+    margin: auto;
+}
 .sci_domains{
     font-size: medium;
     padding-right: 20px;
 }
+
+
+/* using these instead of break lines */
+.smallbreak1{
+
+}
+
+
+.break1{
+    padding-top: 10px;
+    padding-top: 10px;
+}
+.break2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
