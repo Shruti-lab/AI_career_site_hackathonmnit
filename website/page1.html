@@ -13,6 +13,7 @@
     <nav class="navbar background">
         <button class="openbtn" onclick="openNav()">&#9776; </button>
         <div class="logo"><img src="Img/logo.png" height="100" width="100"alt="logo"></div> 
+        <div id="timer"></div>
     </nav> <!--navigation bar--> 
 
     <div id="mySidePanel" class="sidepanel">
@@ -29,7 +30,7 @@
     <section class="intro">
         <div>
         <h2>Welcome to tests</h2>
-        <p class="intropara">Here we will be testing you. Following are the tests:</p>
+        <p class="intropara">Welcome to our comprehensive career assessment test page! We understand that choosing the right career path can be a daunting task, which is why we've designed a holistic approach to help you discover your true potential. Our assessment comprises three distinct tests: aptitude, personality, and skill assessment. Each of these assessments plays a crucial role in determining your strengths and areas of interest. By combining your scores from these tests, we aim to provide you with a personalized career recommendation that aligns with your unique abilities and aspirations. So, get ready to embark on this journey of self-discovery, and let's pave the way to your dream career together!</p>
         </div>
     </section>
     <section>
@@ -274,13 +275,20 @@
 
 
 <script>
-    function openNav(){ /*set width of sidebar to 250px to show it*/
-        document.getElementById("mySidePanel").style.width = "250px";
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+    document.getElementById("mySidePanel").style.width = "250px";
+    document.getElementById("tests").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 
-    function closeNav(){
-        document.getElementById("mySidePanel").style.width = "0px";
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+    document.getElementById("mySidePanel").style.width = "0";
+    document.getElementById("tests").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
     }
+
     function displayRadioValue() {
             var ele = document.getElementsByName('science_domain');
             //let k = document.getElementById('')
@@ -291,6 +299,7 @@
             }
  console.log(domain);
         }
+        window.onload = startTimer;
 
 </script>
 

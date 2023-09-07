@@ -7,67 +7,26 @@
     margin: 0;
     padding: 0;
 }
-.logo{
-    width:20%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
+
 .logo img{
-    width: 33%;
-    height: 33%;
+    width: 30px;
+    height: 30px;
+    padding-left: 50%;
     border:3px #ffffff;
     border-radius: 50px;
+    justify-content: right;
 }
 .navbar{
    display: flex;
    height: 70px;
    align-items: center;
-   justify-content: center;
+   justify-content: left;
    position:sticky;
    top:0;
    background-blend-mode: darken;
    cursor:pointer;
-
-}
-.nav-list{
-    width: 70%;
-    /*background-color: #1DCD8D;*/
-    display: flex;
-    align-items: center;
-
 }
 
-.nav-list li{
-    list-style: none;
-    padding: 26px 30px;
-}
-
-.nav-list li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-
-}
-
-.nav-list li a:hover{
-    text-decoration: none;
-    color: rgb(195, 195, 195);
-
-}
-
-.rightNav{
-    /*background-color: aquamarine;*/
-    width:30%;
-    text-align: right;
-    padding: 0 23px;
-}
-
-#search{
-    padding: 5px;
-    font-size: 18px;
-    border: 2px solid grey;
-    border-radius: 9px;
-}
 
 .background{
    background: #1A2529;
@@ -77,8 +36,8 @@
 
 /*the sidepanel menu*/
 .sidepanel{
-    height: 250px;
-    width: 0;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
     position: fixed;
     z-index:1; /*stay on top*/
     top:0;
@@ -105,6 +64,7 @@
 .sidepanel .closebtn{  /*close button*/
     position: absolute;
     top: 0;
+    right: 25px;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -122,59 +82,50 @@
     background-color:black;
 }
 
-.leftnavbar{
-    width: 40%;
-    background-color: aqua;
+#timer{
+    padding-left: 85%;
+    font-size: 2em;
+    align-items: right;
+    color: antiquewhite;
 }
 
-.intro{
-    max-width: 80%;
-    text-align: center;
-    font-size: 23px;
-    display: flex;
+.tests{
+    transition: margin-left .5s;
+    padding: 70px;
+    font-size: 20px;
+    /*display: flex;*/
     /*justify-content: center;*/
     margin: auto;
     background-color: blanchedalmond;
     background-size: cover;
     background: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+.intro{
+    text-align: center;
+    font-size: 35px;
+}
 .intropara{
-    font-size: medium;
-}
-
-.quiz1{
-    max-width: 80%;
-    margin: auto;
-}
-.quiz2 {
-    max-width: 80%;
-    margin: auto;
+    font-size: 20px;
 }
 .sci_domains{
     font-size: medium;
     padding-right: 20px;
 }
-
-
-/* using these instead of break lines */
-.smallbreak1{
-
+.quiz1{
+    margin: auto;
+}
+.quiz2{
+    margin: auto;
+}
+.title{
+    font-size: 30px;
 }
 
 
-.break1{
-    padding-top: 10px;
-    padding-top: 10px;
-}
-.break2{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.shapesqs{
-    height:150px;
-    width: 150px;
-    padding-left: 100px;
-}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidepanel {padding-top: 15px;}
+    .sidepanel a {font-size: 18px;}
+  }
