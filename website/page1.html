@@ -11,17 +11,8 @@
 </head>
 <body>
     <nav class="navbar background">
-        <ul class="nav-list">
-            <div class="logo"><img src="Img/logo2.png" height="100" width="100"alt="logo"></div>
-            <li><a href="#home" class="href">HOME</a></li>
-            <li><a href="#secRight" class="href">ABOUT</a></li>
-            <li><a href="#services" class="href">SERVICES</a></li>
-            <li><a href="#contact" class="href">CONTACT US</a></li>
-        </ul>
-        <div class="rightNav">
-            <input type="text" name="serch" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div>
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <div class="logo"><img src="Img/logo.png" height="100" width="100"alt="logo"></div> 
     </nav> <!--navigation bar--> 
 
     <div id="mySidePanel" class="sidepanel">
@@ -31,280 +22,255 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
-    <button class="openbtn" onclick="openNav()">&#9776; Toggle SidePanel</button>
-    <h2>Collapsed SidePanel</h2>
-    <p>content...</p>
+    
 
-    <section>
+    <section class="tests" id="tests">
+        
     <section class="intro">
         <div>
         <h2>Welcome to tests</h2>
         <p class="intropara">Here we will be testing you. Following are the tests:</p>
         </div>
     </section>
-    
-        <form action="#" onsubmit="evaluateMCQ()"> 
+    <section>
         <div class="details">
             <form action="">  <label for="fname">Name:</label>
             <br>
             <input type="text" id="fname" name="fname">
             <br>
-            
+            </form>
             <br>
             <p class="domain">Science</p>
             <br>
             <div class="sci_domains">
-                
+                <form action="">
                     <span>
+                    <label for="pcmb">PCMB</label>
                     <input type="radio" id="pcmb" name="science_domain" value="PCMB">
-                    <label for="pcmb">PCMB</label><br />
                     </span>
                     <span>
+                    <label for="pcm">PCM</label>
                     <input type="radio" id="pcm" name="science_domain" value="PCM">
-                    <label for="pcm">PCM</label><br />
                     </span>
                     <span>
+                    <label for="pcb">PCB</label>
                     <input type="radio" id="pcb" name="science_domain" value="PCB">
-                    <label for="pcb">PCB</label><br />
                     </span>
-                    
-              
+                    <button type="button" onclick="displayRadioValue()">
+                        Submit
+                    </button>
+                </form>
             </div>
             <br>
         </div>
-    
-        <div class="break1"></div>
-    <section class="quiz1" id="Aptitude_tests">
-    
+    </section>
+
+    <section class="quiz1" id="Aptitude_tests title">
     <hr>
     <h3>Aptitude Test</h3>
-        <hr>
-        
     <br>
-    <div>
-        <p>Which word is the antonym of "benevolent"?</p>
-        
-            <input type="radio"  name="apq1" value="A">
-            <label for=" ">A) Kind</label><br>
-            <input type="radio"  name="apq1" value="B">
-            <label for=" ">B) Malevolent</label><br>
-            <input type="radio"  name="apq1" value="C">
-            <label for=" ">C) Generous </label><br>
-            <input type="radio"  name="apq1" value="D">
-            <label for=" ">D) Altruistic</label>
-        
-    </div> 
-        <hr>
-    <div>
-        <p>Solve: 3x + 7 = 22. What is the value of x?</p>
-        
-            <input type="radio"  name="apq2" value="A">
-            <label for=" ">A) 6</label><br>
-            <input type="radio"  name="apq2" value="B">
-            <label for=" ">B) 8</label><br>
-            <input type="radio"  name="apq2" value="C">
-            <label for=" ">C) 5</label><br>
-            <input type="radio"  name="apq2" value="D">
-            <label for=" ">D) 7</label>
-        
-    </div>
-        <hr>
-    <div>
-        <p>If all cats have tails, and Fluffy is a cat, what can you conclude?</p>
-        
-            <input type="radio"  name="apq3" value="A">
-            <label for="">A) Fluffy doesn't have a tail</label><br>
-            <input type="radio" name="apq3" value="B">
-            <label for=" ">B) Fluffy is not a cat</label><br>
-            <input type="radio"  name="apq3" value="C">
-            <label for=" ">C) Fluffy has a tail</label><br>
-            <input type="radio"  name="apq3" value="D">
-            <label for=" ">D) Fluffy is not a cat</label>
-        
-    </div>
-        <hr>
-    <div>
-        <p>If a number gives same remainder after dividing 1305, 4665 and 6905, then find the sum of digits of the largest number possible to do so.</p>
-        
-            <input type="radio"  name="apq4" value="A">
-            <label for="">A) 5 </label><br>
-            <input type="radio" name="apq4" value="B">
-            <label for=" ">B) 6 </label><br>
-            <input type="radio"  name="apq4" value="C">
-            <label for=" ">C) 4 </label><br>
-            <input type="radio"  name="apq4" value="D">
-            <label for=" ">D) 3 </label>
-        
-    </div>
-        <hr>
-
-    <div>
-        <p>Find the pattern in the sequence and write the next number.
-
-            10, 17, 36, 73, 134, __</p>
-        
-            <input type="radio"  name="apq5" value="A">
-            <label for="">A) 277</label><br>
-            <input type="radio"  name="apq5" value="B">
-            <label for=" ">B) 243</label><br>
-            <input type="radio"  name="apq5" value="C">
-            <label for=" ">C) 195</label><br>
-            <input type="radio"  name="apq5" value="D">
-            <label for=" ">D) 225</label>
-        
-    </div>
-        <hr>
-
-    <div>
-        <p>A train leaves station A at 10:00 AM and travels at 60 mph. Another train leaves station B at 11:00 AM and travels at 70 mph. How long will it take the second train to catch the first train?(in hrs)</p>
-        
-            <input type="radio"  name="apq6" value="A">
-            <label for="">A) 7</label><br>
-            <input type="radio" name="apq6" value="B">
-            <label for=" ">B) 6</label><br>
-            <input type="radio"  name="apq6" value="C">
-            <label for=" ">C) 5</label><br>
-            <input type="radio"  name="apq6" value="D">
-            <label for=" ">D) 4</label>
-        
-    </div>
-        <hr>
-    <div>
-        <p>Choose your favorite Web language:</p>
-        
-            <input type="radio" name="apq7" value="A">
-            <label for="">A) </label>
-            <br>
-            <img class="shapesqs" src="Img/assessment/shape1.png" > 
-            <br>
-            <div class="break2"></div>
-            
-            <input type="radio" name="apq7" value="B">
-            <label for=" ">B) </label>
-            <br>
-            <img class="shapesqs" src="Img/assessment/shape 2.png"><br>
-            <div class="break2"></div>
-            <input type="radio"  name="apq7" value="C">
-            <label for=" ">C)<br> 
-            <img class="shapesqs" src="Img/assessment/shape 3.png">
-            <div class="break2"></div></label><br>
-            <input type="radio"  name="apq7" value="D">
-            <label for=" ">D) None of these</label>
-        </div>
-        <button type="submit" class="submit-bttn">Submit</button>
+    <ol>
+        <li>
+            <p>Which word is the antonym of "benevolent"?</p>
+        <form>
+            <input type="radio" id="1q11" name="1q1" value="A">
+            <label for="1q11"> Kind</label><br>
+            <input type="radio" id="1q12" name="1q1" value="B">
+            <label for="1q12"> Malevolent</label><br>
+            <input type="radio" id="1q13" name="1q1" value="C">
+            <label for="1q13"> Generous </label><br>
+            <input type="radio" id="1q14" name="1q1" value="D">
+            <label for="1q14"> Altruistic</label>
         </form>
-
-    </div>
+        </li>
+        <br>
         <hr>
+        <li>
+            <p>Solve: 3x + 7 = 22. What is the value of x?</p>
+        <form>
+            <input type="radio" id="1q21" name="1q2" value="A">
+            <label for="1q21"> 6</label><br>
+            <input type="radio" id="1q22" name="1q2" value="B">
+            <label for="1q22"> 8</label><br>
+            <input type="radio" id="1q23" name="1q2" value="C">
+            <label for="1q23"> 5</label><br>
+            <input type="radio" id="1q24" name="1q2" value="D">
+            <label for="1q24"> 7</label>
+        </form>
+        </li>
+        <br>
+        <hr>
+        <li>
+            <p>If all cats have tails, and Fluffy is a cat, what can you conclude?</p>
+        <form>
+            <input type="radio" id="1q31" name="1q3" value="A">
+            <label for="1q31"> Fluffy doesn't have a tail</label><br>
+            <input type="radio" id="1q32" name="1q3" value="B">
+            <label for="1q32"> Fluffy is not a cat</label><br>
+            <input type="radio" id="1q33" name="1q3" value="C">
+            <label for="1q33"> Fluffy has a tail</label><br>
+            <input type="radio" id="1q34" name="1q3" value="D">
+            <label for="1q34"> Fluffy is not a cat</label>
+        </form>
+        </li>
+        <br>
+        <hr>
+        <li>
+            <p>If a number gives same remainder after dividing 1305, 4665 and 6905, then find the sum of digits of the largest number possible to do so.</p>
+        <form>
+            <input type="radio" id="1q41" name="1q4" value="A">
+            <label for="1q41">5 </label><br>
+            <input type="radio" id="1q42" name="1q4" value="B">
+            <label for="1q42">6 </label><br>
+            <input type="radio" id="1q43" name="1q4" value="C">
+            <label for="1q43">4 </label><br>
+            <input type="radio" id="1q44" name="1q4" value="D">
+            <label for="1q44">3 </label>
+        </form>
+        </li>
+        <br>
+        <hr>
+        <li>
+            <p>Find the pattern in the sequence and write the next number.
+
+                10, 17, 36, 73, 134, __</p>
+            <form>
+                <input type="radio" id="1q51" name="1q5" value="A">
+                <label for="1q51"> 277</label><br>
+                <input type="radio" id="1q52" name="1q5" value="B">
+                <label for="1q52"> 243</label><br>
+                <input type="radio" id="1q53" name="1q5" value="C">
+                <label for="1q53"> 195</label><br>
+                <input type="radio" id="1q54" name="1q5" value="D">
+                <label for="1q54"> 225</label>
+            </form>
+        </li>
+        <br>
+        <hr>
+        <li>
+            <p>A train leaves station A at 10:00 AM and travels at 60 mph. Another train leaves station B at 11:00 AM and travels at 70 mph. How long will it take the second train to catch the first train?(in hrs)</p>
+        <form>
+            <input type="radio" id="1q61" name="1q6" value="A">
+            <label for="1q61">A) 7</label><br>
+            <input type="radio" id="1q62" name="1q6" value="B">
+            <label for="1q62">B) 6</label><br>
+            <input type="radio" id="1q63" name="1q6" value="C">
+            <label for="1q63">C) 5</label><br>
+            <input type="radio" id="1q64" name="1q6" value="D">
+            <label for="1q64">D) 4</label>
+        </form>
+        </li>
+        <br>
+        <hr>
+    </ol>
     </section>
-    <section class="quiz2" id="Personality_assesment">
-    <hr />
-    <div class="break2"></div>
+
+    <br>
+    <br>
+    <hr>
+    <section class="quiz2" id="Personality_assesment title">
+    
         <h3>Personality Assesment</h3>
         <br>
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div> 
+        <ol>
+            <li>
+                <p>How do you typically respond to unexpected challenges or setbacks in your life?</p>
+                <form>
+                    <input type="radio" id="2q11" name="2q1" value="o1">
+                    <label for="2q11">  I try to find a compromise and seek common ground.</label><br>
+                    <input type="radio" id="2q12" name="2q1" value="o2">
+                    <label for="2q12"> I prefer to discuss the issue openly and find a solution together.</label><br>
+                    <input type="radio" id="2q13" name="2q1" value="o3">
+                    <label for="2q13">   I'm assertive and direct in addressing conflicts.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
+            <br>
+            <li>
+                <p>In social situations, do you tend to take the lead or prefer to follow the lead of others?</p>
+                <form>
+                    <input type="radio" id="2q21" name="2q2" value="o1">
+                    <label for="2q21">I usually take the lead and initiate interactions.</label><br>
+                    <input type="radio" id="2q22" name="2q2" value="o2">
+                    <label for="2q22"> I'm comfortable in either role, depending on the situation</label><br>
+                    <input type="radio" id="2q23" name="2q2" value="o3">
+                    <label for="2q23">I prefer to follow others' lead and observe before acting.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
+            <br>
+            <li>
+                <p>Are you more inclined to make decisions based on logic and reason, or do you rely on your emotions and intuition?</p>
+                <form>
+                    <input type="radio" id="2q31" name="2q3" value="o1">
+                    <label for="2q31"> I tend to rely on logic and reason.</label><br>
+                    <input type="radio" id="2q32" name="2q3" value="o2">
+                    <label for="2q32"> I consider both logic and emotions before making a decision.</label><br>
+                    <input type="radio" id="2q33" name="2q3" value="o3">
+                    <label for="2q33"> I often trust my intuition and go with my gut feeling.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
+            <br>
+            <li>
+                <p>How do you handle stress and pressure in your daily life or work environment?</p>
+                <form>
+                    <input type="radio" id="2q41" name="2q4" value="o1">
+                    <label for="2q41"> I find it challenging and sometimes get overwhelmed.</label><br>
+                    <input type="radio" id="2q42" name="2q4" value="o2">
+                    <label for="2q42">I manage stress well by staying organized and prioritizing tasks.</label><br>
+                    <input type="radio" id="2q43" name="2q4" value="o3">
+                    <label for="2q43">  I thrive in high-pressure situations and perform at my best.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-    
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
+            <br>
+            <li>
+                <p>Are you more of an introvert or an extrovert, and how does this preference influence your social interactions?</p>
+                <form>
+                    <input type="radio" id="2q51" name="2q5" value="o1">
+                    <label for="2q51"> I'm more of an introvert and prefer smaller gatherings.</label><br>
+                    <input type="radio" id="2q52" name="2q5" value="o2">
+                    <label for="2q52"> I'm adaptable and enjoy a balance of socializing and alone time.</label><br>
+                    <input type="radio" id="2q53" name="2q5" value="o3">
+                    <label for="2q53">  I'm extroverted and love being around people and large gatherings.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-    
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
+            <br>
+            <li>
+                <p>Describe your approach to time management and how you prioritize tasks and responsibilities.</p>
+                <form>
+                    <input type="radio" id="2q61" name="2q6" value="o1">
+                    <label for="2q61">  I'm methodical and like to plan out my tasks in advance.</label><br>
+                    <input type="radio" id="2q62" name="2q6" value="o2">
+                    <label for="2q62"> 'm flexible and adjust my priorities as needed.</label><br>
+                    <input type="radio" id="2q63" name="2q6" value="o3">
+                    <label for="2q63">  I'm good at multitasking and handling multiple responsibilities at once.</label>
+                </form>
+            </li>
+            <br>
             <hr>
-        <div>
-            <p>Choose your favorite Web language:</p>
-            <form>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label><br>
-                <input type="radio"  name=" " value=" ">
-                <label for=" "> </label>
-            </form>
-        </div>
-            <hr>
-        </section>
-       
+            <br>
+            <li>
+                <p>When faced with a conflict or disagreement, what is your preferred method of resolution?</p>
+                <form>
+                    <input type="radio" id="2q71" name="2q7" value="o1">
+                    <label for="2q71">  I try to find a compromise and seek common ground.</label><br>
+                    <input type="radio" id="2q72" name="2q7" value="o2">
+                    <label for="2q72"> I prefer to discuss the issue openly and find a solution together.</label><br>
+                    <input type="radio" id="2q73" name="2q7" value="o3">
+                    <label for="2q73">   I'm assertive and direct in addressing conflicts.</label>
+                </form>
+            </li>
+        </ol>
     </section>
+</section>
 
 
 <script>
@@ -315,8 +281,6 @@
     function closeNav(){
         document.getElementById("mySidePanel").style.width = "0px";
     }
-    console.log("dxfcgvhbj");
-
     function displayRadioValue() {
             var ele = document.getElementsByName('science_domain');
             //let k = document.getElementById('')
