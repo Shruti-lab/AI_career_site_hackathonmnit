@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.logo img{
+    width: 33%;
+    height: 33%;
+    border:3px #ffffff;
+    border-radius: 50px;
+}
+.navbar{
+   display: flex;
+   height: 70px;
+   align-items: center;
+   justify-content: center;
+   position:sticky;
+   top:0;
+   background-blend-mode: darken;
+   cursor:pointer;
+
+}
+.nav-list{
+    width: 70%;
+    /*background-color: #1DCD8D;*/
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+
+}
+
+.rightNav{
+    /*background-color: aquamarine;*/
+    width:30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+   background: #1A2529;
+   background-size: cover;
+   /*background-blend-mode:darken;*/
+}
+
+/*the sidepanel menu*/
+.sidepanel{
+    height: 250px;
+    width: 0;
+    position: fixed;
+    z-index:1; /*stay on top*/
+    top:0;
+    left:0;
+    background-color: #1A2529;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:antiquewhite;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover{
+    color:blanchedalmond;
+}
+
+.sidepanel .closebtn{  /*close button*/
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(1, 28, 65);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover{
+    background-color:black;
+}
+
+.leftnavbar{
+    width: 40%;
+    background-color: aqua;
+}
+
+.intro{
+    max-width: 80%;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    /*justify-content: center;*/
+    margin: auto;
+    background-color: blanchedalmond;
+    background-size: cover;
+    background: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intropara{
+    font-size: medium;
+}
+
+.quiz1{
+    max-width: 80%;
+    margin: auto;
+}
+.sci_domains{
+    font-size: medium;
+    padding-right: 20px;
+}

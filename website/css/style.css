@@ -57,7 +57,7 @@
 
 .rightNav{
     /*background-color: aquamarine;*/
-    width:50%;
+    width:30%;
     text-align: right;
     padding: 0 23px;
 }
@@ -78,7 +78,8 @@
 .firstSection{
     background: url("../Img/home2.png");
     background-size: cover;
-    height: 110vh;
+    height:650px;
+    /*height: 110vh;*/
 }
 .box-main{
     display: flex;
@@ -122,13 +123,14 @@
 }
 
 .btn{
-    padding: 9px 20px;  /*height length*/
+    padding: 20px 30px;  /*height length*/
     margin: 7px 0;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 70px;
     background-color: black;
     color: rgb(213, 255, 115);
-    font-size: 18px;
+    text-align: center;
+    font-size: 27px;
     cursor: pointer;
 }
 
@@ -247,5 +249,15 @@ max-width: 90%;
     padding-top: 10px;
     max-width: 100%;
     align-content: start;
+    
+}
+
+.text-footer{
+    color:black;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1241px){
     
 }
