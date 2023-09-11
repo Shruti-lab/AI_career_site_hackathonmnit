@@ -1,4 +1,4 @@
-const http = require('http');
+/*const http = require('http');
 const fs = require('fs');
 const home = fs.readFileSync('index.html');
 const quiz = fs.readFileSync('page1.html');
@@ -14,4 +14,4 @@ const server = http.createServer((req,res)=> {
 
 server.listen(port,hostname, ()=> {
     console.log(`Server running at http://${hostname}:${port}/`);
-});
+});*/

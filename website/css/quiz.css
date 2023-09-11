@@ -7,10 +7,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    color: #66fcf1;
+    background-color: #0b0c10;
+}
 .logo img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding-left: 50%;
     border:3px #ffffff;
     border-radius: 50px;
@@ -23,8 +26,8 @@
    justify-content: left;
    position:sticky;
    top:0;
-   background-blend-mode: darken;
    cursor:pointer;
+   background-color: #0b0c10;
 }
 
 
@@ -52,7 +55,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color:antiquewhite;
+    
     display: block;
     transition: 0.3s;
 }
@@ -96,7 +99,7 @@
     /*display: flex;*/
     /*justify-content: center;*/
     margin: auto;
-    background-color: blanchedalmond;
+   background-color: #1f2833;
     background-size: cover;
     background: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -107,19 +110,113 @@
 }
 .intropara{
     font-size: 20px;
+    color: #c5c6c7;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
+
+#fname{
+    width: 15%;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px 20px;
+    height: 15px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+}
+.domain{
+    text-transform: uppercase;
+    font-weight:800;
+}
+
+
 .sci_domains{
     font-size: medium;
-    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#pcmb{
+    margin: 5px 10px 0 0;
+}
+#pcm{
+    margin: 5px 10px 0 0;
+}
+#pcb{
+    margin: 5px 10px 0 0;
+}
+
+#science-btn{
+    margin: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 1px 3px 0 0 #66fcf1;
+    color:#0b0c10;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+#science-btn:hover{
+    box-shadow: 0.5px 2px 0 0 #c5c6c7;
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+#science-btn:active{
+    padding-top:6px;
+    box-shadow: none;
 }
 .quiz1{
-    margin: auto;
+    color: #1f2833;
+}
+#aptitude{
+    color: #0b0c10;
+    font-weight: 900;
+    font-size:xx-large;
+}
+
+.inner-quiz1{
+    background: url("../Img/quiz1.jpg");
+    padding: 40px 30px;
+    opacity: 0.7;
+    width: 100%;
+    background-size:cover;
+
+}
+.inner-quiz1 ol{
+    font-weight: bold;
+    margin: 5%;
+    opacity: 1.0;
 }
 .quiz2{
     margin: auto;
 }
 .title{
     font-size: 30px;
+}
+
+.submission{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
+
+.btn{
+    padding: 20px 30px;  /*height length*/
+    margin: 7px 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 70px;
+    background-color: rgb(5, 199, 115);
+    color: rgb(213, 255, 115);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 3px 10px;  /*height length*/
+    vertical-align: middle;
 }
 
 

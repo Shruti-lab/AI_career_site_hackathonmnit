@@ -1,0 +1,32 @@
+{
+    "careerOption1": {
+        "occupation": "Software Developer",
+        "hard-skills": [
+            "Programming languages (e.g. Java, Python)",
+            "Database management",
+            "Web development"
+        ],
+        "soft-skills": [
+            "Problem-solving",
+            "Analytical thinking",
+            "Creative thinking"
+        ],
+        "daily-work": "Developing and maintaining software applications, writing code, debugging, collaborating with team members, problem-solving, analyzing requirements, designing and implementing solutions."
+    },
+    "careerOption2": {
+        "occupation": "Graphic Designer",
+        "hard-skills": [
+            "Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+            "Typography",
+            "Color theory"
+        ],
+        "soft-skills": [
+            "Design perception",
+            "Creative thinking",
+            "Problem-solving"
+        ],
+        "daily-work": "Creating visual designs, working on client projects, using design software, brainstorming ideas, collaborating with clients and team members, analyzing design requirements, presenting design concepts."
+    }
+}
+
+

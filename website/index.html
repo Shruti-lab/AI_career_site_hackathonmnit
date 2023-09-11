@@ -9,17 +9,14 @@
 </head>
 <body>
     <nav class="navbar background">
-        <ul class="nav-list">
-            <div class="logo"><img src="Img/logo2.png" height="100" width="100"alt="logo"></div>
+        <ul class="nav-list" style="text-align: center; margin-left: 20%;">
+            <div class="logo"><img src="Img/logo.png" height="100" width="100"alt="logo"></div>
             <li><a href="#/" class="href">HOME</a></li>
             <li><a href="#About" class="href">ABOUT</a></li>
             <li><a href="#Services" class="href">SERVICES</a></li>
             <li><a href="#Contact_us" class="href">CONTACT US</a></li>
         </ul>
-        <div class="rightNav">
-            <input type="text" name="serch" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div>
+        
     </nav> <!--navigation bar--> 
     <section class="background firstSection">
          <div class="box-main">
@@ -27,7 +24,7 @@
                 <h1 class="text-big">Reboot your career with Us.</h1>
                 <p class="text-small">Your partner in Career.</p>
                 <div class="buttons">
-                    <button class="btn" onClick="start()">Get started</button>
+                    <button class="btn" onClick="start()" id="get_started">Get started</button>
                 </div>
             </div>
             <div class="secondHalf">
@@ -39,10 +36,14 @@
 
     <section class="secRight" id="About">
         <div class="paras">
-        <p class="sectionTag text-medium">Section 2(small description)</p>
-        <p class="sectionSubTag text-small">We are here to provide you the best optimum option to achieve your dreams or create one. There are no wrong paths just wrong choices that you make while traversing them. We generate the roadmap suited for your dream through LLAMA 2 model.</p>
+        <p class="sectionTag text-medium">About Our Idea</p>
+        <p class="sectionSubTag text-small">Our Idea is a career counselling website that helps people find their ideal career. We do this by taking inputs from users based on their interests and taking tests. <br><br>
+
+            The tests are aptitude and personality tests, which help us determine the interests of the person. Our model then predicts the best career for the person as per the scores in tests and personal preferences. <br><br>
+            
+            We offer a personalized experience. We take into account each person's unique interests, skills, and personality traits to make sure that we recommend the right career for them.</p>
     </div>
-        <div class="thumbnail"><img src="Img/analysis.png" alt="counseling" class="imgFluid"></div>
+        <div class="thumbnail"><img src="Img/aboutsection.png" alt="counseling" class="imgFluid"></div>
     </section>
 
     <section class="section section-mid background" id="Services">
@@ -71,10 +72,10 @@
 
     <section class="secRight">
         <div class="paras">
-        <p class="sectionTag text-medium">Section 2(small description)</p>
+        <p class="sectionTag text-medium">Client Testimonials</p>
         <p class="sectionSubTag text-small">We are here to provide you the best optimum option to achieve your dreams or create one. There are no wrong paths just wrong choices that you make while traversing them. We generate the roadmap suited for your dream through LLAMA 2 model.</p>
     </div>
-        <div class="thumbnail"><img src="Img/ainpeople.png" alt="counseling" class="imgFluid"></div>
+        <div class="thumbnail"><img src="Img/client.png" alt="counseling" class="imgFluid" id="client"></div>
     </section>
 
     <hr>
@@ -83,20 +84,10 @@
         
         <div class="contacts">
             <h2 class="contacttxt text-medium">Contact Us</h2>
-            <h3>PHONE:123456789</h3>
-            <h3>EMAIL:abc@gmail.com</h3>
+            <h3 style="color: #66fcf1;margin-top: 100px;">PHONE:123456789</h3>
+            <h3 style="color: #66fcf1;margin-top: 20px;">EMAIL:abc@gmail.com</h3>
             <div>
-            <h3>SOCIAL</h3>
-            <div class="socials parent">
-                <div class="divimg"><img src="Img/div1color.png" alt="counseling" class="imgFluid"></div>
-                <div class="divimg"><img src="Img/div1color.png" alt="counseling" class="imgFluid"></div>
-                <div class="divimg"><img src="Img/div1color.png" alt="counseling" class="imgFluid"></div>
-                
-            </div>
-            </div>
-            <div>
-                <input type="text" name="name" id="name">
-            </div>
+            
         </div>
     </section>
 

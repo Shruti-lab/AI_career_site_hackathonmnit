@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self Assessment</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/website/js/assessment.js"></script>
+    
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -20,8 +20,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#Aptitude_tests">Aptitude tests</a>
         <a href="#Personality_assesment">Personality assessment</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+      
     </div>
     
 
@@ -36,7 +35,6 @@
     <section>
         <div class="details">
             <form action="">  <label for="fname">Name:</label>
-            <br>
             <input type="text" id="fname" name="fname">
             <br>
             </form>
@@ -46,20 +44,19 @@
             <div class="sci_domains">
                 <form action="">
                     <span>
-                    <label for="pcmb">PCMB</label>
+                    <label  for="pcmb">PCMB</label>
                     <input type="radio" id="pcmb" name="science_domain" value="PCMB">
                     </span>
                     <span>
-                    <label for="pcm">PCM</label>
+                    <label  for="pcm">PCM</label>
                     <input type="radio" id="pcm" name="science_domain" value="PCM">
                     </span>
                     <span>
                     <label for="pcb">PCB</label>
                     <input type="radio" id="pcb" name="science_domain" value="PCB">
                     </span>
-                    <button type="button" onclick="displayRadioValue()">
-                        Submit
-                    </button>
+                    <br>
+                    
                 </form>
             </div>
             <br>
@@ -68,7 +65,8 @@
 
     <section class="quiz1" id="Aptitude_tests title">
     <hr>
-    <h3>Aptitude Test</h3>
+    <div class="inner-quiz1">
+    <h3 id="aptitude">APTITUDE TEST</h3>
     <br>
     <ol>
         <li>
@@ -152,18 +150,19 @@
             <p>A train leaves station A at 10:00 AM and travels at 60 mph. Another train leaves station B at 11:00 AM and travels at 70 mph. How long will it take the second train to catch the first train?(in hrs)</p>
         <form>
             <input type="radio" id="1q61" name="1q6" value="A">
-            <label for="1q61">A) 7</label><br>
+            <label for="1q61">7</label><br>
             <input type="radio" id="1q62" name="1q6" value="B">
-            <label for="1q62">B) 6</label><br>
+            <label for="1q62"> 6</label><br>
             <input type="radio" id="1q63" name="1q6" value="C">
-            <label for="1q63">C) 5</label><br>
+            <label for="1q63"> 5</label><br>
             <input type="radio" id="1q64" name="1q6" value="D">
-            <label for="1q64">D) 4</label>
+            <label for="1q64"> 4</label>
         </form>
         </li>
         <br>
         <hr>
     </ol>
+    </div>
     </section>
 
     <br>
@@ -272,7 +271,11 @@
         </ol>
     </section>
 </section>
-
+<span class="Submission"><button class="btn" type="button" onclick="evaluateAptitudeTest()" id="science-btn">
+    Submit
+</button>
+</span>
+<script src="assessment.js"></script>
 
 <script>
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */

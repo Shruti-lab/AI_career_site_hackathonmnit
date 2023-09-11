@@ -6,37 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/result_style.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+
+
+
+
+
 <script>
-function showPieChart() {
+// function showPieChart() {
 
-  // Get the number of correct answers.
-  var correct = parseInt(window.location.search.substring(1));
+//   // Get the number of correct answers.
+//   var correct = parseInt(window.location.search.substring(1));
 
-  // Create a pie chart.
-  var pieChart = new Chart(document.getElementById('pieChart'), {
-    type: 'pie',
-    data: {
-      labels: ['Correct', 'Incorrect'],
-      values: [correct, 20 - correct]
-    },
-    options: {
-      title: {
-        text: 'Pie Chart of Quiz Results'
-      }
-    }
-  });
-}
+//   // Create a pie chart.
+//   var pieChart = new Chart(document.getElementById('pieChart'), {
+//     type: 'pie',
+//     data: {
+//       labels: ['Correct', 'Incorrect'],
+//       values: [correct, 20 - correct]
+//     },
+//     options: {
+//       title: {
+//         text: 'Pie Chart of Quiz Results'
+//       }
+//     }
+//   });
+// }
 </script>
 </head>
 <body>
+    <nav class="navbar background">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <div class="logo"><img src="Img/logo.png" height="100" width="100"alt="logo"></div> 
+        <div id="timer"></div>
+    </nav> <!--navigation bar-->
 
     <h1>Quiz Results</h1>
     
     <div id="pieChart"></div>
     
     <script>
-    showPieChart();
+    //showPieChart();
     </script>
     
 </body>
