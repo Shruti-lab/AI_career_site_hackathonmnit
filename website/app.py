@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = ' '
 
 @app.route('/', methods=['POST'])
 def process_data():
