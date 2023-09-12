@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = " "
 
 def get_ai_response(user_input):
     prompt = f"User: {user_input}\nAI:"
