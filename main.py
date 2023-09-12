@@ -5,7 +5,7 @@ from langchain.chat_models import ChatOpenAI
 import os
 
 
-openai.api_key = "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"
+openai.api_key = " "
 def get_ai_response(user_input):
     prompt = f"User: {user_input}\nAI:"
     response = openai.Completion.create(
